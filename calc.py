@@ -3,9 +3,20 @@
 import math
 
 while True:
-	ComplexityOfTheOperation = input("The complexity of the operation is basic/complex (B/C): ")
+	ComplexityOfTheOperation = input("The complexity of the operation is basic/complex (B/C) or help (h/help): ")
 	
-	if ComplexityOfTheOperation == 'B' or ComplexityOfTheOperation == 'b':
+	if ComplexityOfTheOperation == 'h' or ComplexityOfTheOperation == 'help':
+		print("-=-=-= documentation =-=-=-")
+		print("Operation:  +  - addition")
+		print("Operation:  -  - subtraction")
+		print("Operation:  *  - multiplication")
+		print("Operation:  /  - division")
+		print("Operation:  !  - factorial")
+		print("Operation: sin - sinus")
+		print("Operation: cos - cosine")
+		print("Operation: sin - tangent")
+		print("- ======================= -")
+	elif ComplexityOfTheOperation == 'B' or ComplexityOfTheOperation == 'b':
 		Operation = input("Select the operation (+, -, *, /): ")
 		FirstNumber = int(input("Input first number: "))
 		SecondNumber = int(input("Input second number: "))
