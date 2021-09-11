@@ -23,7 +23,7 @@ while True:
 			print(FirstNumber / SecondNumber)
 
 	elif ComplexityOfTheOperation == 'C' or ComplexityOfTheOperation == 'c':
-		Operation = input("Select the operation (!, sqrt): ")
+		Operation = input("Select the operation (!, sqrt, sin, cos, tan): ")
 		Number  = int(input("Input number: "))
 
 		if Operation == '!':
@@ -31,3 +31,12 @@ while True:
 
 		elif Operation == 'sqrt':
 			print(math.sqrt(Number))
+
+		elif Operation == 'sin':
+			print(math.sin(Number), "rad")
+
+		elif Operation == 'cos':
+			print(math.cos(Number), "rad")
+
+		elif Operation == 'tan':
+			print(math.tan(Number), "rad")
